@@ -13,6 +13,6 @@ app.get("/api", (req, res) => {
     res.json({ messages: ["YOU", "SHALL", "PASS"] });
 });
 
-app.listen(8080, () => {
+app.listen(8080, "0.0.0.0", () => {
     console.log("Server started on port 8080");
 });
